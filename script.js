@@ -88,7 +88,16 @@ function updateWeeklyStats() {
         let label = day.slice(5); // "09-27"
         ctx.fillText(label, x + barWidth / 2, canvas.height - 5);
     });
+
+    document.querySelector(".text-item1").addEventListener("click", () => {
+        document.querySelector("#tracker").scrollIntoView({ behavior: "smooth" });
+    });
+
+    document.querySelector(".text-item12").addEventListener("click", () => {
+        document.querySelector("#add-water").scrollIntoView({ behavior: "smooth" });
+    });
 }
+
 
 // ===== Старт =====
 updateUI();
